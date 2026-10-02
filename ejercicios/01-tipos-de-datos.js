@@ -18,7 +18,24 @@
 
 function esPrecioValido(valor) {
   // Tu código aquí
+
+if (typeof valor !== "number") {
+
+return false;
 }
+
+if (Number.isNaN){
+  return false;
+}
+
+
+if(valor <= o){
+  return false;
+}
+
+return true;
+} 
+
 
 // No borres esta línea: es la puerta por donde el test usa tu función
 module.exports = { esPrecioValido };
